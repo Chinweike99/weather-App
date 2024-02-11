@@ -32,4 +32,10 @@ async function weatherCheck(city){
 
 searchIcon.addEventListener("click", ()=>{
     weatherCheck(searcBox.value);
-})
+});
+
+searchIcon.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13){
+        weatherCheck();
+    }
+  });
