@@ -94,7 +94,7 @@
         display: flex;
         align-content: center;
         justify-content: space-between;
-        margin: 0 20px;
+        margin: 0 10px;
         width: 80%;
         margin-top: 8rem;
     }
@@ -103,10 +103,10 @@
     }
     
     .wind_speed img{
-        margin-right: 10px;
-        height: 40px;
+        margin-right: 6px;
+        height: 30px;
     }
     .wind_speed .percent, .km_hr{
-        font-size: 30px;
+        font-size: 20px;
     }
 }
