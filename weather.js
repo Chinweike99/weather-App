@@ -21,10 +21,10 @@ async function weatherCheck(city){
     if (data.weather[0].main == "Rain"){
         weatherIcon.src = "icons/cloud-snow.svg";
     }
-    else if (data.weather[0].main == "clear"){
+    else if (data.weather[0].main == "Clear"){
         weatherIcon.src = "icons/cloud-sun.svg";
     }
-    else if (data.weather[0].main == "clouds"){
+    else if (data.weather[0].main == "Clouds"){
         weatherIcon.src = "icons/clouds.svg";
     }
     document.querySelector(".weather").style.display = "block";
@@ -37,9 +37,6 @@ searchIcon.addEventListener("click", ()=>{
 searcBox.addEventListener('keydown', function(event) {
     if (event.keyCode === 13){
         event.preventDefault();
-        weatherCheck();
+        weatherCheck(searcBox.value);
     }
-});
-searchIcon.addEventListener('click', function(){
-    weatherCheck();
 });
