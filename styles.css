@@ -73,7 +73,7 @@
 .wind_speed .percent, .km_hr{
     font-size: 30px;
 }
-@media (max-width: 500){
+@media only screen and (max-width: 600px){
     .main .search button{
         height: 40px;
         width: 10%;
