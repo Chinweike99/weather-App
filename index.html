@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="main">
+            <div class="search">
+                <input type="text" placeholder="Search a country ..." spellcheck="false">
+                <button class="search-bar"><img src="icons/search-heart.svg" alt="Search icon"></button>
+            </div>
+            <div class="weather">
+                <div class="condition"><img src="icons/cloud-sun.svg" alt=""></div>
+                <h1 class="temp">37°C </h1>
+                <h2 class="country">Germany</h2>
+            </div>
+            <div class="saturation">
+                <div class="wind_speed">
+                    <img src="icons/brightness-low.svg" alt="">
+                    <div class="windratio">
+                        <p class="percent">26%</p>
+                        <p >Humidity</p>
+                    </div>
+                </div>
+                <div class="wind_speed">
+                    <img src="icons/wind.svg" alt="">
+                    <div class="windratio">
+                        <p class="km_hr">23 km/hr</p>
+                        <p >Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="weather.js"></script>
+    </body>
+</html>
